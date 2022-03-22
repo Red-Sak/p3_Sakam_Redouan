@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="overflow: auto;" lang="fr">
+<html style="overflow: auto" lang="fr">
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
@@ -7,89 +7,81 @@
       src="https://kit.fontawesome.com/85d756451b.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
     <title>ohmyfood</title>
   </head>
-  <body style="overflow: hidden;">
+  <body style="overflow: hidden">
     <header>
-      <section> 
-      <div>
-        <img
-          class="marglogo flexCentre"
-          src="img/ohmyfood.png"
-          alt="logo-ohmyfood"
-          width="250px"
-          height="50px"
-        />
-      </div>
+      <h1 class="logo">ohmyfood</h1>
+    </header>
+    <section>
       <div class="sizeBordureSearch">
         <div class="bordureSearch">
-          <i class="fas fa-map-marker-alt"></i>
+          <i class="fas fa-map-marker-alt fa-lg localtIcone"></i>
           <input class="recherche" type="search" value="Paris, Belleville" />
         </div>
-        <div class="sizeheader">
-          <p class="titre1">Réservez le menu qui vous convient</p>
+        <div class="sizeNav">
+          <h2>Réservez le menu qui vous convient</h2>
           <p class="phrase1">
             Découvrez des réstaurants d'exception, séléctionés par nos soins.
           </p>
-          <div class="flexCentre"> 
-          <div class="sizebuttonExplorer">
-            <h3>Explorer nos restaurants</h3>
+          <div class="flexCentre">
+            <div class="sizebuttonExplorer">
+              <h3>Explorer nos restaurants</h3>
+            </div>
           </div>
         </div>
-        </div>
       </div>
-    </header>
-  </section>
+    </section>
+
     <section class="margfonctionnement">
       <div class="filtre"><h2>Fonctionnement</h2></div>
       <div class="filtre flexBetween FiltreWrap">
-          <Div class="flexAround filtre">
-          <div class="cercleNumbre  "> 1</div>
-          <div class="filtreTextIcons filtre "><i class="fas fa-mobile-alt fa-lg"></i>
-            <div class="texteGras flexCentre"> Choissisez un restaurant</div>
-         </div>
-        </Div>
-        <div class="flexAround filtre"> 
-         <div class="cercleNumbre"> 2</div>
-          <div class="filtreTextIcons filtre "><i class="fas fa-list fa-lg"></i>
-            <div class="texteGras flexCentre"> Composez votre menu</div>
-          </div>
-        </Div>
-        <div class="flexAround filtre">    
-          <div class="cercleNumbre">3</div>    
-          <div class="filtreTextIcons filtre "><i class="fas fa-store fa-lg"></i>
-            <div class="texteGras flexCentre"> Dégustez au restaurant </div>
+        <div class="filtre">
+          <div class="cercleNumbre">1</div>
+          <div class="filtreTextIcons filtre">
+            <i class="fas fa-mobile-alt fa-lg FOnctIcone"></i>
+            <div class="texteGras flexCentre">Choissisez un restaurant</div>
           </div>
         </div>
+        <div class="flexAround filtre">
+          <div class="cercleNumbre">2</div>
+          <div class="filtreTextIcons filtre">
+            <i class="fas fa-list fa-lg FOnctIcone"></i>
+            <div class="texteGras flexCentre">Composez votre menu</div>
+          </div>
         </div>
-  </section>
-  <section>
-<div class="BlocRestaurants">
-  <div class="filtre"><h2>Restaurants</h2></div>
-<div class="cubeRestaurant flexColumnCentre">
-<div class="imageRestaurant1 bordureNouveau"></div>
-<div class="cubeDetails">
-<div class="texteGras flexBetween "><p>La palette du goût</p>
-  <i class="fas fa-heart"></i>
+        <div class="flexAround filtre">
+          <div class="cercleNumbre">3</div>
+          <div class="filtreTextIcons filtre">
+            <i class="fas fa-store fa-lg FOnctIcone"></i>
+            <div class="texteGras flexCentre">Dégustez au restaurant</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="menus">
+      <div class="menus-card">
+        <div class="filtre"><h2>Restaurants</h2></div>
+        <div class="cubeRestaurant flexColumnCentre">
+          <a href="#" class="imageRestaurant1">
+            <img
+              src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+              alt="La palette du goût"
+              width="100%"
+              height="220"
+            />
+          </a>
+          <div class="bordureNouveau texteGras">Nouveau</div>
+          <div class="cubeDetails">
+            <div class="largeurtxte">
+              <p>La palette du goût</p>
 
-</div>
-</div>
-</div>
-
-
-</div>
-
-
-  </section>
-
-
-
-    
+              <p>Ménilmontant</p>
+            </div>
+            <div><i class="far fa-heart"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

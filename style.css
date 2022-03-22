@@ -1,7 +1,23 @@
-body {
-  font-family: "Roboto", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+header {
+  font-family: "Shrikhand", cursive;
+  font-size: large;
+  text-align: center;
+  margin: 0;
+}
+.logo {
+  box-shadow: 0px 5px 5px #c0c0c0;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  position: relative;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
 /*Général*/
 
 .texteGras {
@@ -42,17 +58,14 @@ body {
   justify-content: space-between;
 }
 
-/*header*/
-.marglogo {
-  padding-bottom: 15px;
-}
+/*NAV*/
+
 .sizeBordureSearch {
   text-align: center;
 }
 .bordureSearch {
   height: 50px;
   background-color: #dcdcdc;
-  border-top: 5px solid #c0c0c0;
   padding-top: 20px;
 }
 .recherche {
@@ -61,11 +74,12 @@ body {
   height: 30px;
   margin: auto;
   background-color: #dcdcdc;
+  text-align: center;
 }
-.sizeheader {
+.sizeNav {
   padding-top: 30px;
   width: auto;
-  height: 375px;
+  height: 450px;
   background-color: #f2f2f2;
 }
 .titre1 {
@@ -75,7 +89,7 @@ body {
   margin: 0;
   color: black;
   font-weight: bold;
-  font-size: 34px;
+  font-size: 45px;
 }
 
 .phrase1 {
@@ -83,9 +97,8 @@ body {
   justify-content: space-around;
   margin-bottom: 50px;
   color: gray;
-  font-size: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  font-size: 32px;
+  padding-bottom: 20px;
 }
 .sizebuttonExplorer {
   display: flex;
@@ -96,6 +109,9 @@ body {
   cursor: pointer;
   border-radius: 30px;
   background: linear-gradient(#9356dc, #ff79da);
+}
+.sizebuttonExplorer:hover {
+  transform: scale(1.1);
 }
 /* Section fonctionement */
 
@@ -114,9 +130,16 @@ body {
   flex-wrap: wrap;
 }
 /*icone*/
-.fas {
-  padding-left: 50px;
+.localtIcone {
+  color: rgb(37, 35, 35);
+}
+.FOnctIcone {
+  padding-left: 5px;
   color: gray;
+  padding-left: 35px;
+}
+.fas:hover {
+  transform: scale(1.2);
 }
 .cercleNumbre {
   border-radius: 50%;
@@ -126,14 +149,17 @@ body {
   background-color: #9356dc;
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 15px;
 }
 
 .filtreTextIcons {
   height: 60px;
-  width: 300px;
+  width: 350px;
   background-color: #f2f2f2;
   border-radius: 25px 25px 25px 25px;
-  box-shadow: 0 0 20px 0 #dcdcdc;
+  box-shadow: 4px 6px 17px #dcdcdc;
 }
 .positionCercle {
   position: relative;
@@ -143,10 +169,14 @@ body {
   margin-right: 10%;
 }
 /*Restaurants*/
-.BlocRestaurants {
+.menus {
   width: auto;
   height: 600px;
   background-color: #f2f2f2;
+}
+.menus-card {
+  display: flex;
+  flex-direction: column;
 }
 .cubeRestaurant {
   width: 35%;
@@ -157,35 +187,74 @@ body {
   margin: 15px;
 }
 .imageRestaurant1 {
-  background-image: url("img/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 220px;
   border-radius: 25px 25px 0 0;
+  margin-top: 5px;
+  border-radius: 15px 15px 0 0;
+}
+.bordureNouveau {
+  height: 55px;
+  width: 90px;
+  color: green;
+  background-color: #99e2d0;
+  border-radius: 1px;
+  text-align: center;
+  position: relative;
+  bottom: 100px;
+  left: 119px;
 }
 .cubeDetails {
   display: flex;
   justify-content: start;
   width: 90%;
 }
+.largeurtxte {
+  width: 90%;
+}
 .iconeCoeur {
   color: white;
   border: gray;
 }
+
 /*media querey*/
 
-@media screen and (max-width: 1131px) {
+@media screen and (max-width: 1260px) {
   .FiltreWrap {
     justify-content: center;
   }
 }
 
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 723px) {
   .flexBetween {
     justify-content: none;
   }
   .FiltreWrap {
     justify-content: center;
+  }
+  .titre1 {
+    font-size: 30px;
+  }
+  .phrase1 {
+    font-size: 20px;
+  }
+  .filtreTextIcons {
+    width: 285px;
+  }
+  .fas {
+    padding-left: 34px;
+  }
+  .texteGras {
+    font-size: 17px;
+  }
+  .cubeRestaurant {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 0 0 8px 8px #dcdcdc;
+    margin: 0;
   }
 }
