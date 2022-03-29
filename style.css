@@ -28,6 +28,7 @@ body {
   display: flex;
   margin: auto;
   justify-content: center;
+  align-items: center;
 }
 .flexAround {
   display: flex;
@@ -214,7 +215,7 @@ body {
   justify-content: start;
   width: 90%;
 }
-.largeurtxte {
+.largeurtexte {
   width: 90%;
 }
 .iconeCoeur {
@@ -281,13 +282,23 @@ body {
     border-radius: 25px 25px 25px 25px;
     box-shadow: 0 0 8px 8px #dcdcdc;
     margin: 0;
+    background-size: cover;
   }
   .footer {
     text-align: start;
   }
 }
 /* La palette du gout*/
-.blocPalettedugout {
+
+.IconeP2 {
+  padding-right: 80px;
+  color: black;
+  text-decoration: none;
+}
+.TitreP2 {
+  padding-right: 80px;
+}
+.blocMenu {
   height: auto;
   width: auto;
   background-color: #f2f2f2;
