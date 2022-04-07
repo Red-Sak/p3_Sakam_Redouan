@@ -19,6 +19,16 @@ body {
   margin: 0;
 }
 /*Général*/
+.position__relative {
+  display: flex;
+  position: relative;
+  top: 10px;
+  gap: 150px;
+  align-items: center;
+}
+.color__gray {
+  color: gray;
+}
 
 .texteGras {
   font-weight: bold;
@@ -30,6 +40,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .flexAround {
   display: flex;
   justify-content: space-around;
@@ -39,6 +50,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.flexEvenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
 }
 .flexColumnCentre {
   display: flex;
@@ -59,8 +76,6 @@ body {
   justify-content: space-between;
 }
 
-/*NAV*/
-
 .sizeBordureSearch {
   text-align: center;
 }
@@ -69,6 +84,9 @@ body {
   background-color: #dcdcdc;
   padding-top: 20px;
 }
+.input:focus {
+}
+
 .recherche {
   flex: flex;
   border: 0;
@@ -80,8 +98,11 @@ body {
 .sizeNav {
   padding-top: 30px;
   width: auto;
-  height: 450px;
+  height: 400px;
   background-color: #f2f2f2;
+}
+.Font-size__H2 {
+  font-size: 2rem;
 }
 .titre1 {
   display: flex;
@@ -98,10 +119,10 @@ body {
   justify-content: space-around;
   margin-bottom: 50px;
   color: gray;
-  font-size: 32px;
+  font-size: 1rem;
   padding-bottom: 20px;
 }
-.sizebuttonExplorer {
+.btn__Explorer {
   display: flex;
   justify-content: center;
   height: 60px;
@@ -110,26 +131,46 @@ body {
   cursor: pointer;
   border-radius: 30px;
   background: linear-gradient(#9356dc, #ff79da);
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
 }
-.sizebuttonExplorer:hover {
-  transform: scale(1.1);
+.btn__Explorer:hover {
+  transform: scale(1.15);
 }
 /* Section fonctionement */
 
 .margfonctionnement {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 40px;
   margin-left: 15px;
 }
 .filtre {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 0;
   margin-right: 15px;
   flex-wrap: wrap;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
 }
+.filtre:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+.Filtre__Center {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 /*icone*/
 .localtIcone {
   color: rgb(37, 35, 35);
@@ -139,9 +180,14 @@ body {
   color: gray;
   padding-left: 35px;
 }
-.fas:hover {
-  transform: scale(1.1);
+.FOnctIcone:hover {
+  color: #9356dc;
 }
+.Icone:hover {
+  background: linear-gradient(#9356dc, #ff79da);
+  transform: scale(1.02);
+}
+
 .cercleNumbre {
   border-radius: 50%;
   height: 30px;
@@ -158,9 +204,13 @@ body {
 .filtreTextIcons {
   height: 60px;
   width: 350px;
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   border-radius: 25px 25px 25px 25px;
   box-shadow: 4px 6px 17px #dcdcdc;
+  align-items: center;
+}
+.filtreTextIcons:hover {
+  background-color: #f4ebf5;
 }
 .positionCercle {
   position: relative;
@@ -170,65 +220,86 @@ body {
   margin-right: 10%;
 }
 /*Restaurants*/
+.padding__h2 {
+  padding-top: 25px;
+  padding-left: 15px;
+}
 .menus {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   background-color: #f2f2f2;
 }
-.menus-card {
+
+.menus__card {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
 }
-.image {
-  border-radius: 12px 12px 0 0;
+.menus__card--bloc {
+  flex-wrap: wrap;
+  width: 450px;
+  padding-bottom: 50px;
 }
-.cubeRestaurant {
-  width: 35%;
-  height: 300px;
+
+.menus__card--imageBloc {
+  width: 100%;
+  height: 300;
   background-color: white;
   border-radius: 25px 25px 25px 25px;
-  box-shadow: 0 0 8px 8px #dcdcdc;
-  margin: 15px;
+  margin: 25px;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
 }
-.imageRestaurant1 {
-  background-size: cover;
-  background-position: center;
+.menus__card--imageBloc:hover {
+  transform: scale(1.02);
+}
+.menus__card--cizeImage {
   width: 100%;
-  height: 220px;
+  height: 250px;
   border-radius: 25px 25px 0 0;
-  margin-top: 5px;
-  border-radius: 15px 15px 0 0;
 }
 .bordureNouveau {
-  height: 55px;
-  width: 90px;
+  height: 30px;
+  width: 100px;
   color: green;
   background-color: #99e2d0;
   border-radius: 1px;
-  text-align: center;
-  position: relative;
-  bottom: 190px;
-  left: 140px;
-}
-.cubeDetails {
   display: flex;
-  justify-content: start;
-  width: 90%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 230px;
+  left: 325px;
 }
-.largeurtexte {
-  width: 90%;
+.menus_card--detail {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 10px;
+  gap: 150px;
 }
-.iconeCoeur {
-  color: white;
-  border: gray;
+.menus__card--p {
+  display: flex;
+  flex-direction: column;
 }
+.menus__card--marge-P-Zero {
+  margin: 0;
+}
+
 .footer {
   height: 300px;
   width: auto;
   color: white;
   background-color: rgba(35, 32, 32, 0.89);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 61px;
 }
+
 .titrefooter {
   font-family: Shrikhand;
   padding-top: 30px;
@@ -250,8 +321,16 @@ body {
 /*media querey*/
 
 @media screen and (max-width: 1260px) {
-  .FiltreWrap {
+  .Filtre__Center {
     justify-content: center;
+  }
+}
+@media screen and (max-widht: 925px) {
+  .menus__card--imageBloc {
+    margin-bottom: 0;
+  }
+  .menus__card--bloc {
+    padding-bottom: 0;
   }
 }
 
@@ -271,25 +350,41 @@ body {
   .filtreTextIcons {
     width: 285px;
   }
-  .fas {
-    padding-left: 34px;
+  .menus__card--imageBloc {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .menus__card--bloc {
+    width: 360px;
+    padding-bottom: 50px;
+  }
+  .bordureNouveau {
+    position: relative;
+    bottom: 230px;
+    left: 244px;
+  }
+  .menus__card--bloc {
+    padding-bottom: 0;
   }
 
-  .cubeRestaurant {
-    width: 100%;
-    height: 300px;
-    background-color: white;
-    border-radius: 25px 25px 25px 25px;
-    box-shadow: 0 0 8px 8px #dcdcdc;
-    margin: 0;
-    background-size: cover;
-  }
   .footer {
     text-align: start;
   }
 }
-/* La palette du gout*/
 
+/* Pages restaurants*/
+
+.image__header--size {
+  width: 375px;
+  height: auto;
+}
+.Icone__header {
+  display: flex;
+  position: relative;
+  right: 20px;
+  top: 16px;
+  color: rgb(77, 75, 75);
+}
 .IconeP2 {
   padding-right: 80px;
   color: black;
@@ -298,14 +393,90 @@ body {
 .TitreP2 {
   padding-right: 80px;
 }
+.titre__h1 {
+  font-family: Shrikhand, cursive;
+  padding-left: 10px;
+  font-size: 23px;
+  padding-top: 30px;
+}
+
 .blocMenu {
   height: auto;
   width: auto;
   background-color: #f2f2f2;
+  position: relative;
+  bottom: 60px;
+  border-radius: 60px 60px 0 0;
+  padding-bottom: 50px;
 }
-.Entrée {
+.blocMenu1 {
+  height: auto;
+  width: auto;
+  background-color: #f2f2f2;
+  position: relative;
+  bottom: 60px;
+  border-radius: 60px 60px 0 0;
+}
+.Menus {
+  display: flex;
+  width: 400px;
+  height: 85px;
   border: transparent;
   border-radius: 25px 25px 25px 25px;
   background-color: white;
-  margin-top: 100px;
+  align-items: center;
+  gap: 100px;
+  padding-left: 20px;
+}
+.texteTItre {
+  justify-content: start;
+}
+.prix__position {
+  display: flex;
+  position: relative;
+  right: 45px;
+  top: 23px;
+  font-weight: bold;
+}
+.prix__padding-20£ {
+  padding-left: 20px;
+}
+.Menus__titre--P {
+  color: gray;
+  padding-left: 10px;
+}
+.Menus__border--bottom {
+  border-bottom: #99e2d0 solid 5px;
+  margin-right: 322px;
+  padding-bottom: 5px;
+}
+
+.padding-left {
+  padding-left: 30px;
+  margin-right: 856px;
+}
+.Menus__restaurants {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  padding-bottom: 50px;
+}
+.bouton__commander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 300px;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  background: linear-gradient(#9356dc, #ff79da);
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+.bouton__commander:hover {
+  transform: scale(1.15);
 }
