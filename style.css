@@ -48,7 +48,13 @@ body {
 /*Général*/
 .position__relative {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
+=======
+  position: relative;
+  top: 10px;
+  gap: 150px;
+>>>>>>> b34b803fe03f52ba59036c6c1df83323adb52dda
   align-items: center;
 }
 .color__gray {
@@ -109,11 +115,15 @@ body {
   background-color: #dcdcdc;
   padding-top: 20px;
 }
+<<<<<<< HEAD
 input:focus {
   border: 2px solid #9356dc;
 }
 input {
   outline: none;
+=======
+.input:focus {
+>>>>>>> b34b803fe03f52ba59036c6c1df83323adb52dda
 }
 
 .recherche {
@@ -132,6 +142,18 @@ input {
 }
 .Font-size__H2 {
   font-size: 2rem;
+<<<<<<< HEAD
+=======
+}
+.titre1 {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin: 0;
+  color: black;
+  font-weight: bold;
+  font-size: 45px;
+>>>>>>> b34b803fe03f52ba59036c6c1df83323adb52dda
 }
 
 .phrase1 {
@@ -157,11 +179,14 @@ input {
 }
 .btn__Explorer:hover {
   transform: scale(1.15);
+<<<<<<< HEAD
   box-shadow: 2px 2px 20px 2px gray;
   background: linear-gradient(180deg, #ff79da, #9356dc);
 }
 .btn__padding--bottom {
   padding-bottom: 50px;
+=======
+>>>>>>> b34b803fe03f52ba59036c6c1df83323adb52dda
 }
 /* Section fonctionement */
 
@@ -235,7 +260,11 @@ input {
 
 .filtreTextIcons {
   height: 60px;
+<<<<<<< HEAD
   width: 285px;
+=======
+  width: 350px;
+>>>>>>> b34b803fe03f52ba59036c6c1df83323adb52dda
   background-color: #f6f6f6;
   border-radius: 25px 25px 25px 25px;
   box-shadow: 4px 6px 17px #dcdcdc;
@@ -252,9 +281,12 @@ input {
   margin-right: 10%;
 }
 /*Restaurants*/
+<<<<<<< HEAD
 .paddin__left--h2 {
   padding-left: 15px;
 }
+=======
+>>>>>>> b34b803fe03f52ba59036c6c1df83323adb52dda
 .padding__h2 {
   padding-top: 25px;
   padding-left: 15px;
@@ -289,13 +321,19 @@ input {
 }
 .menus__card--imageBloc:hover {
   transform: scale(1.02);
+<<<<<<< HEAD
   box-shadow: 5px 5px 30px 0 gray;
+=======
+>>>>>>> b34b803fe03f52ba59036c6c1df83323adb52dda
 }
 .menus__card--cizeImage {
   width: 100%;
   height: 250px;
   border-radius: 25px 25px 0 0;
+<<<<<<< HEAD
   object-fit: cover;
+=======
+>>>>>>> b34b803fe03f52ba59036c6c1df83323adb52dda
 }
 .bordureNouveau {
   height: 30px;
@@ -324,15 +362,27 @@ input {
 .menus__card--marge-P-Zero {
   margin: 0;
 }
+<<<<<<< HEAD
 /*----------footer---------*/
+=======
+
+>>>>>>> b34b803fe03f52ba59036c6c1df83323adb52dda
 .footer {
   height: 250px;
   width: auto;
   color: white;
   background-color: rgba(35, 32, 32, 0.89);
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   align-items: center;
+=======
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 61px;
+>>>>>>> b34b803fe03f52ba59036c6c1df83323adb52dda
 }
 
 .titrefooter {
@@ -353,6 +403,7 @@ input {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 .menus {
   padding-bottom: 50px;
 }
@@ -371,15 +422,71 @@ input {
 }
 .menus__card--bloc {
   padding-bottom: 0;
+=======
+/*media querey*/
+
+@media screen and (max-width: 1260px) {
+  .Filtre__Center {
+    justify-content: center;
+  }
+>>>>>>> b34b803fe03f52ba59036c6c1df83323adb52dda
+}
+@media screen and (max-widht: 925px) {
+  .menus__card--imageBloc {
+    margin-bottom: 0;
+  }
+  .menus__card--bloc {
+    padding-bottom: 0;
+  }
 }
 
+<<<<<<< HEAD
 .footer {
   text-align: start;
+=======
+@media screen and (max-width: 723px) {
+  .flexBetween {
+    justify-content: none;
+  }
+  .FiltreWrap {
+    justify-content: center;
+  }
+  .titre1 {
+    font-size: 30px;
+  }
+  .phrase1 {
+    font-size: 20px;
+  }
+  .filtreTextIcons {
+    width: 285px;
+  }
+  .menus__card--imageBloc {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .menus__card--bloc {
+    width: 360px;
+    padding-bottom: 50px;
+  }
+  .bordureNouveau {
+    position: relative;
+    bottom: 230px;
+    left: 244px;
+  }
+  .menus__card--bloc {
+    padding-bottom: 0;
+  }
+
+  .footer {
+    text-align: start;
+  }
+>>>>>>> b34b803fe03f52ba59036c6c1df83323adb52dda
 }
 
 /* Pages restaurants*/
 
 .image__header--size {
+<<<<<<< HEAD
   width: 100%;
   height: 350px;
   object-fit: cover;
@@ -412,6 +519,10 @@ input {
 
 .icon-heart:hover .far {
   opacity: 0;
+=======
+  width: 375px;
+  height: auto;
+>>>>>>> b34b803fe03f52ba59036c6c1df83323adb52dda
 }
 .Icone__header {
   display: flex;
@@ -420,7 +531,11 @@ input {
   top: 16px;
   color: rgb(77, 75, 75);
 }
+<<<<<<< HEAD
 .IconeRetourAccueille {
+=======
+.IconeP2 {
+>>>>>>> b34b803fe03f52ba59036c6c1df83323adb52dda
   padding-right: 80px;
   color: black;
   text-decoration: none;
@@ -433,6 +548,7 @@ input {
   padding-left: 10px;
   font-size: 23px;
   padding-top: 30px;
+<<<<<<< HEAD
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -558,6 +674,73 @@ input[type="checkbox"]:before {
   position: absolute;
 }
 
+=======
+}
+
+.blocMenu {
+  height: auto;
+  width: auto;
+  background-color: #f2f2f2;
+  position: relative;
+  bottom: 60px;
+  border-radius: 60px 60px 0 0;
+  padding-bottom: 50px;
+}
+.blocMenu1 {
+  height: auto;
+  width: auto;
+  background-color: #f2f2f2;
+  position: relative;
+  bottom: 60px;
+  border-radius: 60px 60px 0 0;
+}
+.Menus {
+  display: flex;
+  width: 400px;
+  height: 85px;
+  border: transparent;
+  border-radius: 25px 25px 25px 25px;
+  background-color: white;
+  align-items: center;
+  gap: 100px;
+  padding-left: 20px;
+}
+.texteTItre {
+  justify-content: start;
+}
+.prix__position {
+  display: flex;
+  position: relative;
+  right: 45px;
+  top: 23px;
+  font-weight: bold;
+}
+.prix__padding-20£ {
+  padding-left: 20px;
+}
+.Menus__titre--P {
+  color: gray;
+  padding-left: 10px;
+}
+.Menus__border--bottom {
+  border-bottom: #99e2d0 solid 5px;
+  margin-right: 322px;
+  padding-bottom: 5px;
+}
+
+.padding-left {
+  padding-left: 30px;
+  margin-right: 856px;
+}
+.Menus__restaurants {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  padding-bottom: 50px;
+}
+>>>>>>> b34b803fe03f52ba59036c6c1df83323adb52dda
 .bouton__commander {
   display: flex;
   justify-content: center;
@@ -574,6 +757,7 @@ input[type="checkbox"]:before {
 }
 .bouton__commander:hover {
   transform: scale(1.15);
+<<<<<<< HEAD
   box-shadow: 2px 2px 25px 2px gray;
   background: linear-gradient(180deg, #ff79da, #9356dc);
 }
@@ -613,4 +797,6 @@ input[type="checkbox"]:before {
   .flexBetween {
     justify-content: none;
   }
+=======
+>>>>>>> b34b803fe03f52ba59036c6c1df83323adb52dda
 }
