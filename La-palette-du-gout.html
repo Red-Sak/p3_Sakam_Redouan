@@ -8,66 +8,187 @@
   ></script>
   <title>La palette du gout</title>
   <body>
+    <div class="loader__position">
+      <div class="loader"><i class="fas fa-spinner fa-3x fa-spin"></i></div>
+    </div>
     <header>
       <div class="flexCentre">
-        <div class="IconeP2">
-          <a href="index.html"> <i class="fas fa-arrow-left"></i> </a>
+        <div class="IconeRetourAccueille">
+          <a href="index.html">
+            <i class="fas fa-arrow-left flesh-left"></i>
+          </a>
         </div>
         <div class="TitreP2"><h1>ohmyfood</h1></div>
       </div>
     </header>
-    <main>
-      <section>
-        <div class="flexCentre">
-          <img
-            src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-            alt="la La-palette-du-gout"
-            width="450px"
-            height="250px"
-          />
+
+    <div class="flexCentre">
+      <img
+        class="image__header--size"
+        src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+        alt="la La-palette-du-gout"
+      />
+    </div>
+
+    <main class="background__Layout">
+      <div class="position__relative">
+        <h1 class="titre__h1">La palette du gout</h1>
+        <div class="icon-heart icone-heart_position">
+          <i class="fas fa-heart fa-xl"></i>
+          <i class="far fa-heart fa-xl color__gray Icone"></i>
         </div>
-      </section>
-      <div> 
-        <div class="blocMenu">
-          <div><h1>LA palette du gout</h1></div>
-          <div><i class="far fa-heart"></i></div>
-          <div><h2>Entrées</h2></div>
-          <div class="Entrée">
-            <div class="texteGras">Fricassée d'escargot</div>
-            <div>Au piment d'espelette</div>
-            <div>25€</div>
-          </div>
-          <div class="Entrée">
-            <div class="texteGras">Foie gras de canard mi-cuit</div>
-            <div>Et ces copeaux de truffe noire</div>
-            <div>35€</div>
-          </div>
-          <div class="Entrée">
-            <div class="texteGras">Oeuf au plat</div>
-            <div>Assaisonné à la truffe sur lit de ....</div>
-            <div>20€</div>
-          </div>
-          <h2>Plats</h2>
+      </div>
+      <div class="bloc-menus">
+        <section class="container-menus">
+          <h3 class="title-menus">Entrée</h3>
+          <section class="detail-menus">
+            <div class="item-menus">
+              <h4 class="subtitle-menus">Fricassée d'escargot</h4>
+              <p class="sub-subTitle">Au piment d'Espelette</p>
+            </div>
+            <div class="menus-price">25€</div>
+            <div class="checkbox-container">
+              <div>
+                <input type="checkbox" id="check" name="check" />
+              </div>
+            </div>
+          </section>
+          <section class="detail-menus">
+            <div class="item-menus">
+              <h4 class="subtitle-menus">Foie gras de canard mi-cuit</h4>
+              <p class="sub-subTitle">Et ses copeaux de truffe noire</p>
+            </div>
+            <div class="menus-price">35€</div>
+            <div class="checkbox-container">
+              <div>
+                <input type="checkbox" id="check" name="check" />
+              </div>
+            </div>
+          </section>
+          <section class="detail-menus">
+            <div class="item-menus">
+              <h4 class="subtitle-menus">Oeuf au plat</h4>
+              <p class="sub-subTitle">
+                Assaisonné à la truffe sur lit de caviar
+              </p>
+            </div>
+            <div class="menus-price">20€</div>
+            <div class="checkbox-container">
+              <div>
+                <input type="checkbox" id="check" name="check" />
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="container-menus">
+          <h3 class="title-menus">Plats</h3>
+          <section class="detail-menus">
+            <div class="item-menus">
+              <h4 class="subtitle-menus">Filet de boeuf aux herbes</h4>
+              <p class="sub-subTitle">Accompagné de sa ribambelle de légumes</p>
+            </div>
+            <div class="menus-price">40€</div>
+            <div class="checkbox-container">
+              <div>
+                <input type="checkbox" id="check" name="check" />
+              </div>
+            </div>
+          </section>
+          <section class="detail-menus">
+            <div class="item-menus">
+              <h4 class="subtitle-menus">Parmentier de queue de boeuf</h4>
+              <p class="sub-subTitle">
+                À la truffe noire sur sa purée de panais
+              </p>
+            </div>
+            <div class="menus-price">35€</div>
+            <div class="checkbox-container">
+              <div>
+                <input type="checkbox" id="check" name="check" />
+              </div>
+            </div>
+          </section>
+          <section class="detail-menus">
+            <div class="item-menus">
+              <h4 class="subtitle-menus">Filet de turbot</h4>
+              <p class="sub-subTitle">Aux agrumes</p>
+            </div>
+            <div class="menus-price">44€</div>
+            <div class="checkbox-container">
+              <div>
+                <input type="checkbox" id="check" name="check" />
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="container-menus">
+          <h3 class="title-menus">Desserts</h3>
+          <section class="detail-menus">
+            <div class="item-menus">
+              <h4 class="subtitle-menus">Paris-Brest</h4>
+              <p class="sub-subTitle">Revisité</p>
+            </div>
+            <div class="menus-price">18€</div>
+            <div class="checkbox-container">
+              <div>
+                <input type="checkbox" id="check" name="check" />
+              </div>
+            </div>
+          </section>
+          <section class="detail-menus">
+            <div class="item-menus">
+              <h4 class="subtitle-menus">Macaron au chocolat d'exception</h4>
+              <p class="sub-subTitle">Et glace à la vanille de Madagascar</p>
+            </div>
+            <div class="menus-price">22€</div>
+            <div class="checkbox-container">
+              <div>
+                <input type="checkbox" id="check" name="check" />
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="detail-menus">
+              <div class="item-menus">
+                <h4 class="subtitle-menus">Mousse au chocolat</h4>
+                <p class="sub-subTitle">
+                  Au piment d'Espelette et à la truffe noire
+                </p>
+              </div>
+              <div class="menus-price">23€</div>
+
+              <div class="checkbox-container checkbox-animation">
+                <div>
+                  <input type="checkbox" id="check" name="check" />
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+      <div>
+        <div class="btn__padding--bottom">
+          <div class="bouton__commander flexCentre">Commander</div>
         </div>
-        </div>
-      </section>
+      </div>
     </main>
     <footer>
-        <div class="footer">
-          <h1 class="titrefooter">Ohmyfood</h1>
-          <div class="listfooter">
-            <p>
-              <i class="fas fa-utensils margiconetextFooter"></i> Proposer un
-              restaurant
-            </p>
-            <p>
-              <i class="fas fa-hands-helping margiconetextFooter"></i>Devenir
-              partenaire
-            </p>
-            <p>mentions légales</p>
-            <a class="contact" href="mailto:contact@ohmyfood.fr">Contacts</a>
-          </div>
+      <div class="footer">
+        <h1 class="titrefooter">Ohmyfood</h1>
+        <div class="listfooter">
+          <p>
+            <i class="fas fa-utensils margiconetextFooter"></i> Proposer un
+            restaurant
+          </p>
+          <p>
+            <i class="fas fa-hands-helping margiconetextFooter"></i>Devenir
+            partenaire
+          </p>
+          <p>mentions légales</p>
+          <a class="contact" href="mailto:contact@ohmyfood.fr">Contacts</a>
         </div>
-      </footer>
+      </div>
+    </footer>
   </body>
 </html>

@@ -6,8 +6,11 @@
     src="https://kit.fontawesome.com/85d756451b.js"
     crossorigin="anonymous"
   ></script>
-  <title>Le délice des sens</title>
+  <title>La palette du gout</title>
   <body>
+    <div class="loader__position">
+      <div class="loader"><i class="fas fa-circle-notch fa-3x fa-spin"></i></div> 
+      </div>
     <header>
       <div class="flexCentre">
         <div class="IconeP2">
@@ -17,57 +20,128 @@
       </div>
     </header>
     <main>
-      <section>
-        <div class="flexCentre">
-          <img
-            src="img/stil-u2Lp8tXIcjw-unsplash.jpg"
-            alt="la delice des sens"
-            width="450px"
-            height="250px"
-          />
-        </div>
-      </section>
-      <div> 
+      <div class="flexCentre">
+        <img
+        class="image__header--size"
+          src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          alt="la La-palette-du-gout"
+        />
+      </div>
+
+      <section class="background__color">  
         <div class="blocMenu">
-          <div><h1>Le délice des sens</h1></div>
-          <div><i class="far fa-heart"></i></div>
-          <div><h2>Entrées</h2></div>
-          <div class="Entrée">
-            <div class="texteGras">Fricassée d'escargot</div>
-            <div>Au piment d'espelette</div>
-            <div>25€</div>
+          <div class="position__relative">
+            <h1 class="titre__h1">La palette du gout</h1>
+            <i class="far fa-heart fa-xl Icone__header"></i>
           </div>
-          <div class="Entrée">
-            <div class="texteGras">Foie gras de canard mi-cuit</div>
-            <div>Et ces copeaux de truffe noire</div>
-            <div>35€</div>
+          <div class="Menus__titre--P">
+            <p class="Menus__border--bottom">ENTRÉES</p>
           </div>
-          <div class="Entrée">
-            <div class="texteGras">Oeuf au plat</div>
-            <div>Assaisonné à la truffe sur lit de ....</div>
-            <div>20€</div>
+          <div class="Menus__restaurants">
+            <div class="Menus">
+              <div>
+                <p class="texteGras">Fricassée d'escargot</p>
+                <p>Au piment d'espelette</p>
+                <div class="menu-check"> 
+                  <div>
+                    <input type="checkbox" id="check" name="check"
+                           checked>
+                    <label for="check">Scales</label>
+                  </div>
+
+                </div>
+              </div>
+              <div class="prix__position">25€</div>
+            </div>
+            <div class="Menus">
+              <div class="texteTItre">
+                <p class="texteGras">Foie gras de canard mi-cuit</p>
+                <p>Et ces copeaux du truffe noir</p>
+              </div>
+              <div class="prix__position">25€</div>
+            </div>
+            <div class="Menus">
+              <div>
+                <p class="texteGras">Oeuf au plat</p>
+                <p>Assaisonné à la truffe sur lit de ....</p>
+              </div>
+              <div class="prix__position">25€</div>
+            </div>
           </div>
-          <h2>Plats</h2>
-        </div>
+
+          <div class="Menus__titre--P">
+            <p class="Menus__border--bottom">Plats</p>
+          </div>
+          <div class="Menus__restaurants">
+            <div class="Menus">
+              <div>
+                <p class="texteGras">Fricassée d'escargot</p>
+                <p>Au piment d'espelette</p>
+              </div>
+              <div class="prix__position">25€</div>
+            </div>
+            <div class="Menus">
+              <div class="texteTItre">
+                <p class="texteGras">Foie gras de canard mi-cuit</p>
+                <p>Et ces copeaux du truffe noir</p>
+              </div>
+              <div class="prix__position">25€</div>
+            </div>
+            <div class="Menus">
+              <div class="texteTItre">
+                <p class="texteGras">Oeuf au plat</p>
+                <p>Assaisonné à la truffe sur lit de ....</p>
+              </div>
+              <div class="prix__position">25€</div>
+            </div>
+          </div>
+
+          <div class="Menus__titre--P"><p class="Menus__border--bottom">Deserts</p></div>
+          <div class="Menus__restaurants">
+            <div class="Menus">
+              <div>
+                <p class="texteGras">Fricassée d'escargot</p>
+                <p>Au piment d'espelette</p>
+              </div>
+              <div class="prix__position">25€</div>
+            </div>
+            <div class="Menus">
+              <div class="texteTItre">
+                <p class="texteGras">Foie gras de canard mi-cuit</p>
+                <p>Et ces copeaux du truffe noir</p>
+              </div>
+              <div class="prix__position">25€</div>
+            </div>
+            <div class="Menus">
+              <div>
+                <p class="texteGras">Oeuf au plat</p>
+                <p>Assaisonné à la truffe sur lit de ....</p>
+              </div>
+              <div class="prix__position">25€</div>
+            </div>
+          </div>
+        <div >
+        <div class="btn__padding--bottom">
+<div class="bouton__commander flexCentre">Commander</div>
+</div>
         </div>
       </section>
-    </main>
     <footer>
-        <div class="footer">
-          <h1 class="titrefooter">Ohmyfood</h1>
-          <div class="listfooter">
-            <p>
-              <i class="fas fa-utensils margiconetextFooter"></i> Proposer un
-              restaurant
-            </p>
-            <p>
-              <i class="fas fa-hands-helping margiconetextFooter"></i>Devenir
-              partenaire
-            </p>
-            <p>mentions légales</p>
-            <a class="contact" href="mailto:contact@ohmyfood.fr">Contacts</a>
-          </div>
+      <div class="footer">
+        <h1 class="titrefooter">Ohmyfood</h1>
+        <div class="listfooter">
+          <p>
+            <i class="fas fa-utensils margiconetextFooter"></i> Proposer un
+            restaurant
+          </p>
+          <p>
+            <i class="fas fa-hands-helping margiconetextFooter"></i>Devenir
+            partenaire
+          </p>
+          <p>mentions légales</p>
+          <a class="contact" href="mailto:contact@ohmyfood.fr">Contacts</a>
         </div>
-      </footer>
+      </div>
+    </footer>
   </body>
 </html>

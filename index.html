@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="overflow: auto" lang="fr">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
@@ -9,7 +9,10 @@
     ></script>
     <title>ohmyfood</title>
   </head>
-  <body style="overflow: hidden">
+  <body>
+    <div class="loader__position">
+    <div class="loader"><i class="fas fa-spinner fa-3x fa-spin"></i></div> 
+    </div>
     <header>
       <h1 class="logo">ohmyfood</h1>
     </header>
@@ -17,125 +20,147 @@
       <div class="sizeBordureSearch">
         <div class="bordureSearch">
           <i class="fas fa-map-marker-alt fa-lg localtIcone"></i>
-          <input class="recherche" type="search" value="Paris, Belleville" />
+          <input class="recherche" type="search" placeholder="Paris, Belleville" />
         </div>
         <div class="sizeNav">
-          <h2>Réservez le menu qui vous convient</h2>
+          <h2 class="Font-size__H2">Réservez le menu qui vous convient</h2>
           <p class="phrase1">
             Découvrez des réstaurants d'exception, séléctionés par nos soins.
           </p>
           <div class="flexCentre">
-            <div class="sizebuttonExplorer">
+            <div class="btn__Explorer">
               <h3>Explorer nos restaurants</h3>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <section class="margfonctionnement">
-      <div class="filtre"><h2>Fonctionnement</h2></div>
-      <div class="filtre flexBetween FiltreWrap">
+      <h2 class="paddin__left--h2">Fonctionnement</h2>
+      <div class="Filtre__Center">
         <div class="filtre">
           <div class="cercleNumbre">1</div>
-          <div class="filtreTextIcons filtre">
+          <div class="filtreTextIcons Filtre__Center ">
             <i class="fas fa-mobile-alt fa-lg FOnctIcone"></i>
             <div class="texteGras flexCentre">Choissisez un restaurant</div>
           </div>
         </div>
-        <div class="flexAround filtre">
+        <div class="filtre">
           <div class="cercleNumbre">2</div>
-          <div class="filtreTextIcons filtre">
+          <div class="filtreTextIcons Filtre__Center">
             <i class="fas fa-list fa-lg FOnctIcone"></i>
             <div class="texteGras flexCentre">Composez votre menu</div>
           </div>
         </div>
-        <div class="flexAround filtre">
+        <div class="filtre">
           <div class="cercleNumbre">3</div>
-          <div class="filtreTextIcons filtre">
+          <div class="filtreTextIcons Filtre__Center">
             <i class="fas fa-store fa-lg FOnctIcone"></i>
             <div class="texteGras flexCentre">Dégustez au restaurant</div>
           </div>
         </div>
       </div>
     </section>
+             <!-- Section Restaurant-->
+
     <section class="menus">
-      <div class="menus-card">
-        <div class="filtre"><h2>Restaurants</h2></div>
-        <div class="cubeRestaurant flexColumnCentre">
-          <a href="La-palette-du-gout.html" class="imageRestaurant1">
-            <img
-              class="image"
-              src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-              alt="La palette du goût"
-              width="100%"
-              height="220px"
-            />
-          </a>
-          <div class="bordureNouveau texteGras">Nouveau</div>
-          <div class="cubeDetails">
-            <div class="largeurtexte">
-              <p>La palette du goût</p>
-              <p>Ménilmontant</p>
+      <div class="padding__h2">
+        <h2>Restaurants</h2>
+      </div>
+      <div class="menus__card">
+        <div class="menus__card--bloc">
+          <div class="menus__card--imageBloc">
+            <a href="La-palette-du-gout.html">
+              <img
+                class="menus__card--cizeImage"
+                src="img/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="La palette du goût"
+              />
+            </a>
+            <div class="bordureNouveau texteGras">Nouveau</div>
+            <div class="menus_card--detail">
+              <div class="menus__card--p">
+                <p class="menus__card--marge-P-Zero texteGras">
+                  La palette du goût
+                </p>
+                <p class="color__gray">Ménilmontant</p>
+              </div>
+              <div class="icon-heart">
+                <i class="fas fa-heart fa-xl"></i>
+                <i class="far fa-heart fa-xl color__gray "></i>
+              </div>
             </div>
-            <div><i class="far fa-heart"></i></div>
+          </div>
+          <div class="menus__card--imageBloc">
+            <a href="La-note-enchentée.html">
+              <img
+                class="menus__card--cizeImage"
+                src="img/stil-u2Lp8tXIcjw-unsplash.jpg"
+                alt="La note enchentée"
+              />
+            </a>
+            <div class="bordureNouveau texteGras">Nouveau</div>
+            <div class="menus_card--detail">
+              <div class="menus__card--p">
+                <p class="menus__card--marge-P-Zero texteGras">
+                  La note enchentée
+                </p>
+                <p class="color__gray">Charonne</p>
+              </div>
+              <div class="icon-heart">
+                <i class="fas fa-heart fa-xl"></i>
+                <i class="far fa-heart fa-xl color__gray "></i>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="menus__card--bloc">
+          <div class="menus__card--imageBloc">
+            <a href="A-la-francaise.html">
+              <img
+                class="menus__card--cizeImage"
+                src="img/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt="A-la-francaise"
+              />
+            </a>
+            <div class="bordureNouveau texteGras">Nouveau</div>
+            <div class="menus_card--detail">
+              <div class="menus__card--p">
+                <p class="menus__card--marge-P-Zero texteGras">
+                  A-la-francaise
+                </p>
+                <p class="color__gray">Cité rouge</p>
+              </div>
+              <div class="icon-heart">
+                <i class="fas fa-heart fa-xl"></i>
+                <i class="far fa-heart fa-xl color__gray "></i>
+              </div>
+            </div>
+          </div>
+          <div class="menus__card--imageBloc">
+            <a href="Le-délice-des-sens.html">
+              <img
+                class="menus__card--cizeImage"
+                src="img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="Le-délice-des-sens"
+              />
+            </a>
+            <div class="bordureNouveau texteGras">Nouveau</div>
+            <div class="menus_card--detail">
+              <div class="menus__card--p">
+                <p class="menus__card--marge-P-Zero texteGras">
+                  Le-délice-des-sens
+                </p>
+                <p class="color__gray">Folie-Méricourt</p>
+              </div>
+              <div class="icon-heart">
+                <i class="fas fa-heart fa-xl"></i>
+                <i class="far fa-heart fa-xl color__gray "></i>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="cubeRestaurant flexColumnCentre">
-          <a href="La-note-enchentée.html" class="imageRestaurant1">
-            <img
-              src="img/stil-u2Lp8tXIcjw-unsplash.jpg"
-              alt="La note enchantée"
-              width="100%"
-              height="220"
-            />
-          </a>
-          <div class="bordureNouveau texteGras">Nouveau</div>
-          <div class="cubeDetails">
-            <div class="largeurtxte">
-              <p>La note enchantée</p>
-
-              <p>Charonne</p>
-            </div>
-            <div><i class="far fa-heart"></i></div>
-          </div>
         </div>
-        <div class="cubeRestaurant flexColumnCentre">
-          <a href="A-la-francaise.html" class="imageRestaurant1">
-            <img
-              src="img/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-              alt="La palette du goût"
-              width="100%"
-              height="220"
-            />
-          </a>
-          <div class="bordureNouveau texteGras">Nouveau</div>
-          <div class="cubeDetails">
-            <div class="largeurtxte">
-              <p>A la française</p>
-              <p>Cité Rouge</p>
-            </div>
-            <div><i class="far fa-heart"></i></div>
-          </div>
-        </div>
-        <div class="cubeRestaurant flexColumnCentre">
-          <a href="la-delice des sens.html" class="imageRestaurant1">
-            <img
-              src="img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-              alt="La palette du goût"
-              width="100%"
-              height="220"
-            />
-          </a>
-          <div class="bordureNouveau texteGras">Nouveau</div>
-          <div class="cubeDetails">
-            <div class="largeurtxte">
-              <p>Le délice des sens</p>
-
-              <p>Folie-Méricourt</p>
-            </div>
-            <div><i class="far fa-heart"></i></div>
-          </div>
         </div>
       </div>
     </section>
