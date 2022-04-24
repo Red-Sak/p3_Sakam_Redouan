@@ -1,119 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8" />
   <link rel="stylesheet" href="style.css" />
   <script
     src="https://kit.fontawesome.com/85d756451b.js"
     crossorigin="anonymous"
   ></script>
-  <title>A la francaise</title>
+  <title>La palette du gout</title>
   <body>
+    <div class="loader__position">
+      <div class="loader"><i class="fas fa-spinner fa-3x fa-spin"></i></div>
+    </div>
     <header>
       <div class="flexCentre">
-        <div class="IconeP2">
-          <a href="index.html"> <i class="fas fa-arrow-left"></i> </a>
+        <div class="IconeRetourAccueille">
+          <a href="index.html">
+            <i class="fas fa-arrow-left flesh-left"></i>
+          </a>
         </div>
         <div class="TitreP2"><h1>ohmyfood</h1></div>
       </div>
     </header>
-    <main>
-      <div class="flexCentre">
-        <img
+    <div class="flexCentre">
+      <img
         class="image__header--size"
-          src="img/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-          alt="la La-palette-du-gout"
-        />
+        src="img/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+        alt="A la française"
+      />
+    </div>
+    <main class="background__Layout">
+      <div class="position__relative">
+        <h1 class="titre__h1">À la française</h1>
+        <div class="icon-heart icone-heart_position">
+          <i class="fas fa-heart fa-xl"></i>
+          <i class="far fa-heart fa-xl color__gray Icone"></i>
+        </div>
       </div>
+      <div class="bloc-menus">
+        <section class="container-menus">
+          <h3 class="title-menus">Entrées</h3>
+          <section class="detail-menus delai1">
+            <div class="item-menus">
+              <h4 class="subtitle-menus">Tartare de poulpe acidulé</h4>
+              <p class="sub-subTitle">Aux zestes d'orange</p>
+            </div>
+            <div class="menus-price">25€</div>
+            <div class="checkbox-container">
+              <div>
+                <input type="checkbox" name="check" />
+              </div>
+            </div>
+          </section>
+          <section class="detail-menus delai2">
+            <div class="item-menus">
+              <h4 class="subtitle-menus">Velouté de légumes d'antan</h4>
+              <p class="sub-subTitle">Carotte, panais, topinambour</p>
+            </div>
+            <div class="menus-price">35€</div>
+            <div class="checkbox-container">
+              <div>
+                <input type="checkbox" name="check" />
+              </div>
+            </div>
+          </section>
+          <section class="detail-menus delai3">
+            <div class="item-menus">
+              <h4 class="subtitle-menus">Soupe à l'oignon</h4>
+              <p class="sub-subTitle">Revisitée</p>
+            </div>
+            <div class="menus-price">20€</div>
+            <div class="checkbox-container">
+              <div>
+                <input type="checkbox" name="check" />
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="container-menus">
+          <h3 class="title-menus">Plats</h3>
+          <section class="detail-menus delai1">
+            <div class="item-menus">
+              <h4 class="subtitle-menus">Coquilles Saint-Jacques</h4>
+              <p class="sub-subTitle">Accompagnées d'une purée de panais</p>
+            </div>
+            <div class="menus-price">40€</div>
+            <div class="checkbox-container">
+              <div>
+                <input type="checkbox" name="check" />
+              </div>
+            </div>
+          </section>
+          <section class="detail-menus delai2">
+            <div class="item-menus">
+              <h4 class="subtitle-menus">Magret de canard</h4>
+              <p class="sub-subTitle">Et parmentier de pommes de terre</p>
+            </div>
+            <div class="menus-price">35€</div>
+            <div class="checkbox-container">
+              <div>
+                <input type="checkbox" name="check" />
+              </div>
+            </div>
+          </section>
+          <section class="detail-menus delai3">
+            <div class="item-menus">
+              <h4 class="subtitle-menus">Pigeonneau d’Ille-et-Vilaine</h4>
+              <p class="sub-subTitle">Sur son lit de gnocchis aux légumes</p>
+            </div>
+            <div class="menus-price">44€</div>
+            <div class="checkbox-container">
+              <div>
+                <input type="checkbox" name="check" />
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="container-menus delai3">
+          <h3 class="title-menus">Desserts</h3>
+          <section class="detail-menus delai1">
+            <div class="item-menus">
+              <h4 class="subtitle-menus">Pétales de violettes glacés</h4>
+              <p class="sub-subTitle">Et purée de noisettes</p>
+            </div>
+            <div class="menus-price">18€</div>
+            <div class="checkbox-container">
+              <div>
+                <input type="checkbox" name="check" />
+              </div>
+            </div>
+          </section>
+          <section class="detail-menus delai2">
+            <div class="item-menus">
+              <h4 class="subtitle-menus">Fondant au chocolat</h4>
+              <p class="sub-subTitle">Revisité</p>
+            </div>
+            <div class="menus-price">22€</div>
+            <div class="checkbox-container">
+              <div>
+                <input type="checkbox" name="check" />
+              </div>
+            </div>
+          </section>
+          <section class="detail-menus delai3">
+            <div class="item-menus">
+              <h4 class="subtitle-menus">Millefeuille croustillant</h4>
+              <p class="sub-subTitle">Myrtilles et pâte d’amande</p>
+            </div>
+            <div class="menus-price">23€</div>
 
-      <section>  
-        <div class="blocMenu">
-        <div>
-          <div class="position__relative">
-            <h1 class="titre__h1">À la française</h1>
-            <i class="far fa-heart fa-xl Icone__header"></i>
-          </div>
-          <div class="Menus__titre--P">
-            <P class=" Menus__border--bottom">ENTRÉES</P>
-          </div>
-          <div class="Menus__restaurants">
-            <div class="Menus">
+            <div class="checkbox-container checkbox-animation">
               <div>
-                <p class="texteGras">Tartare de poulpe acidulé</p>
-                <p>Aux zests d'orange</p>
+                <input type="checkbox" name="check" />
               </div>
-              <div class="prix__position">25€</div>
             </div>
-            <div class="Menus">
-              <div class="texteTItre">
-                <p class="texteGras">Velouté de légumes d'antan</p>
-                <p>Carottes, panais, topinambour</p>
-              </div>
-              <div class="prix__position">35€</div>
-            </div>
-            <div class="Menus">
-              <div>
-                <p class="texteGras">Soupe à l'oignon</p>
-                <p>Revisitée</p>
-              </div>
-              <div class="prix__position prix__padding-20£">20€</div>
-            </div>
-          </div>
-</div>
-<div>         
-<div class="Menus__titre--P">
-            <P class="Menus__border--bottom">Plats</p>
-          </div>
-          <div class="Menus__restaurants">
-            <div class="Menus">
-              <div>
-                <p class="texteGras">Coquilles saint-jacques</p>
-                <p>Accompagnées d'une purée de panais</p>
-              </div>
-              <div class="prix__position">40€</div>
-            </div>
-            <div class="Menus">
-              <div class="texteTItre">
-                <p class="texteGras">Magret de canard</p>
-                <p>Et paramentier de pommes de terres</p>
-              </div>
-              <div class="prix__position">35€</div>
-            </div>
-            <div class="Menus">
-              <div class="texteTItre">
-                <p class="texteGras">Pigeonneau d'ille-et-Vilaine</p>
-                <p>Sur son lit de gnocchis aux légumes</p>
-              </div>
-              <div class="prix__position">44€</div>
-            </div>
-          </div>
+          </section>
+        </section>
+      </div>
+      <div>
+        <div class="btn__padding--bottom">
+          <div class="bouton__commander flexCentre">Commander</div>
         </div>
-          <div class="Menus__titre--P"><p class="Menus__border--bottom">Deserts</p></div>
-          <div class="Menus__restaurants">
-            <div class="Menus">
-              <div>
-                <p class="texteGras">Pétales de violettes glacé</p>
-                <p>Et purée de noisettes</p>
-              </div>
-              <div class="prix__position">18€</div>
-            </div>
-            <div class="Menus">
-              <div class="texteTItre">
-                <p class="texteGras">Fondant au chocolat</p>
-                <p>Revisité</p>
-              </div>
-              <div class="prix__position">22€</div>
-            </div>
-            <div class="Menus">
-              <div>
-                <p class="texteGras">Millefeuille croustillant</p>
-                <p>Myrtilles et pâte d'amande</p>
-              </div>
-              <div class="prix__position">23€</div>
-            </div>
-          </div>
-<div class="bouton__commander flexCentre">Commander</div>
-        </div>
-      </section>
+      </div>
+    </main>
+
     <footer>
       <div class="footer">
         <h1 class="titrefooter">Ohmyfood</h1>
