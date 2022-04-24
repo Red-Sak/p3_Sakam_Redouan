@@ -635,6 +635,10 @@ input[type="checkbox"]:before {
   .footer {
     align-items: flex-start;
   }
+  .icone-heart_position {
+    margin-top: 37px;
+    margin-right: 40px;
+  }
 }
 
 @media screen and (max-widht: 925px) {
@@ -649,5 +653,11 @@ input[type="checkbox"]:before {
 @media screen and (max-width: 725px) {
   .flexBetween {
     justify-content: unset;
+  }
+  .menus__card--bloc {
+    width: 353px;
+    padding-bottom: 50px;
+    padding-right: 3px;
+    padding-bottom: 0;
   }
 }
