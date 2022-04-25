@@ -261,6 +261,9 @@ input {
   width: 450px;
   padding-bottom: 50px;
 }
+.decoration_none {
+  text-decoration: none;
+}
 .menus__card--imageBloc {
   width: 100%;
   background-color: white;
